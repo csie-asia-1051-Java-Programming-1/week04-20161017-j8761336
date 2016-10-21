@@ -12,9 +12,16 @@ public class ex01_105021026 {
 		// TODO Auto-generated method stub
 		System.out.print("輸入多個正整數(-1即停止)");
 		Scanner scn =new Scanner(System.in);
-		String b =scn.next();
+		int b =scn.nextInt();
 		int sum =0;
-		
+		int a = 0;
+		while(b != -1){
+			sum +=b;
+			b = scn.nextInt();
+			a++;
+		}
+		System.out.println("合:"+sum);
+		System.out.println("平均"+sum/a);
 	}
 
 }
